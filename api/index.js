@@ -14,3 +14,10 @@ app.listen(3000, ()=>{
     console.log("app is listening from port 3000")
 })
 
+// routes Import
+
+import userRoute from "./routes/user.route.js"
+
+// routes declaration
+
+app.use("/api/v1/user", userRoute)
